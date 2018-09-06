@@ -6,17 +6,22 @@
 <title>Page One</title>
 
 <style>
+@font-face { font-family: vespasian;
+              src: url(Fonts/VESPASIAN_TIMES.ttf); }
 body {
-  background: #FDE2FF;
-  Background-size: auto;
+  background: linear-gradient(#C6759E, #E7BBE3, #CCD5FF, #7CC6FE, #349BDB);
+  Background-size: cover;
   color: #111;
-  font-family: serif;
+  Background-attachment: fixed;
   }
-  h1 {color: purple;}
-  h1 strong {color: red;}
+  h1 {color: Black;
+      font-family: vespasian;
+      font-size: 50pt;
+      text-shadow: 2pt 2pt 4pt #000000;}
+  h1 strong {color: black;}
   .subhead {color: blue;}
   .alltext {border-style: groove;
-            background-color: #D7BCE8;}
+            background-color: #C3BECB;}
   div {padding: 50px;
       margin: 100px;}
   ul {
@@ -38,7 +43,7 @@ li a {
     text-decoration: none;}
 
 li a:hover:not(.active) {
-    background-color: #D7BCE8;}
+    background-color: #7CC6FE;}
 
 .active {
     background-color: pink;}
