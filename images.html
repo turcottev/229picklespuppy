@@ -23,7 +23,7 @@ body {
             background: linear-gradient(#C3BECB, #716E82);}
   div {padding: 50px;
       margin: 100px;
-      height: 1500px;}
+      }
   ul {
     list-style-type: none;
     margin: 100px;
@@ -48,8 +48,35 @@ li a:hover:not(.active) {
 .active {
     background-color: pink;}
 img {padding: 20px;
-  }
+    border: 1px solid #ddd;
+    border-radius: 4px;}
 img:hover {opacity: 0.6;}
+.smallsh { border-radius: 50%;}
+.mermaid {box-shadow: 10px 10px grey;}
+.backdrop {background: url("ImageExperiment/rosewoman.jpg") center;
+          background-size: contain;
+          width: 700px;
+          height: 700px;
+          margin: 0 auto;}
+.text {color: white;
+      background: #581845;
+      mix-blend-mode: multiply;
+      text-align: center;
+      margin: 0;
+      font-size: 8em;
+      font-family: sans-serif;
+      font-weight: 800;
+      height: 700px;
+      width: 700px;
+      box-sizing: border-box;
+      transition: font-weight .5s, padding-top .5s;}
+.text:hover {
+      font-weight: 200;
+      padding-top: 300px;
+    }
+
+.sh1 { transform: rotate(25deg);}
+.sh2 { transform: rotate(320deg);}
 </style>
 
 
@@ -69,11 +96,25 @@ img:hover {opacity: 0.6;}
 Image Experiment
 </h1>
 <p><center>
-  <img src="ImageExperiment/mermaid.jpg">
+  <img class= "mermaid" src="ImageExperiment/mermaid.jpg" width = 700px >
 </p>
 <p>
-  <img src="ImageExperiment/rosewoman.jpg" width = 700px >
-</p></center>
+  <div class="backdrop" <img class="rosewoman" src="ImageExperiment/rosewoman.jpg" width = 700px >
+<p class="text">Rose Lady</p></div>
+<p>
+  <div class="sh1" >
+  <img src="ImageExperiment/seahorses.jpg" width = 700px ></div>
+  </p>
+<p>
+  <div class="sh2" >
+  <img src="ImageExperiment/seahorse.jpg" width = 700px ></div>
+</p>
+<p>
+  <img class="smallsh" src="ImageExperiment/seahorse2.jpg" width = 300px >
+  <img class="smallsh" src="ImageExperiment/seahorse3.jpg" width = 300px >
+</p>
+
+</center>
 
 
 </div>
