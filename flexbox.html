@@ -13,7 +13,7 @@
   div {
     background: pink;
     width: 100px;
-    height: 100px;
+
   }
 
 .flex-container1 {
@@ -21,7 +21,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: space-around;}
+  align-content: space-around;
+}
 
 .flex-container2 {
   flex-direction: column;
@@ -29,11 +30,13 @@
 }
 .flex-container2 div {
   padding: 7px;
+  height: 100px;
 }
 .flex-container1 div {
   padding: 15px;
   border-radius: 2em;
   box-shadow: 3px 3px 5px;
+  height: 100px;
 }
 
 .order1 {order: -1; flex: 3;}
@@ -47,6 +50,7 @@
 .flex-container3 div {
   border-radius: 1em;
   padding: 10px;
+  height: 100px;
 }
 .align1 {
   align-self: center;
@@ -63,12 +67,13 @@
 .flex-container4 div {
   border-radius: 5em;
   padding: 25px;
+  height: 100px;
 }
 .flex-container5 {
       display: flex;
       flex-wrap: wrap;
       width: 90%;
-      max-width: 1200px;
+      padding: 20px;
       margin: 0 auto;
       box-sizing: border-box;
 }
@@ -93,7 +98,7 @@
       flex: 100%;
       background: #888;
       padding: 2em;
-      min-height: 200px;
+      min-height: 300px;
       box-sizing: border-box;
       margin-top: 1%;
       margin-bottom: 2%;
@@ -104,12 +109,40 @@
         flex: 69%;
         margin-right: 1%;
       }
-
       .sidebar {
         flex: 30%;
         margin-top: 0;
       }
 }
+
+ul.navbar {
+  list-style-type: none;
+  margin: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+  }
+li.nav {
+  float: left;}
+
+li.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;}
+
+li.nav a:hover:not(.active) {
+  background-color: purple;}
+
+.active {
+  background-color: pink;}
+a:link, a:visited {color: black;
+                text-decoration: none;}
+a:hover {color: white;}
+
   </style>
 </head>
 
@@ -117,6 +150,13 @@
   <header><center>
     <h1>Flexbox Experiments</h1></center>
   </header>
+
+  <ul class="navbar">
+  <li class="nav"><a class="active" href="index.html">Home</a></li>
+  <li class="nav"><a href="experiments.html">Experiments</a></li>
+  <li class="nav"><a href="explorations.html">Explorations</a></li>
+  <li class="nav"><a href="projects.html">Projects</a></li>
+  </ul>
 
   <section class="flex-container1">
     <div>1</div>
@@ -161,17 +201,50 @@
 
   <section class="flex-container5">
     <div class="article">
-      <h2>title of main article</h2>
-      <p>paragraph text. put some filler content here. make this an article or something.</p>
-      <p>paragraph text. put some filler content here. make this an article or something.</p>
+      <h2>Repubblica Italiana di Saber Italiano</h2>
+      <p>Ogni individuo ha diritto all'istruzione. L'istruzione deve essere
+        gratuita almeno per quanto riguarda le classi elementari e
+        fondamentali. L'istruzione elementare deve essere obbligatoria.
+        L'istruzione tecnica e professionale deve essere messa alla portata
+        di tutti e l'istruzione superiore deve essere egualmente accessibile a
+        tutti sulla base del merito. L'istruzione deve essere indirizzata al
+        pieno sviluppo della personalità umana ed al rafforzamento del rispetto
+        dei diritti umani e delle libertà fondamentali. Essa deve promuovere la
+        comprensione, la tolleranza, l'amicizia fra tutte le Nazioni, i gruppi
+        razziali e religiosi, e deve favorire l'opera delle Nazioni Unite per
+        il mantenimento della pace. I genitori hanno diritto di priorità nella
+        scelta del genere di istruzione da impartire ai loro figli.</p>
+      <p>L'emblema della Repubblica Italiana è quello approvato dall'Assemblea
+        Costituente nella seduta del 31 gennaio 1948 e promulgato dal presidente
+        della Repubblica Enrico De Nicola il successivo 5 maggio del 1948, con
+        decreto legislativo n. 535. Il bozzetto iniziale fu realizzato
+        dall'artista Paolo Paschetto, vincitore dei due concorsi pubblici
+        indetti nel 1946 e nel 1947, cui parteciparono complessivamente circa
+        500 candidati con oltre 800 bozzetti. Sostituì, in qualità di simbolo
+        dello stato, il precedente stemma del Regno d'Italia.</p>
     </div>
     <div class="sidebar">
-      <h2>sidebar here</h2>
-      <p>paragraph text. put some filler content here. make this an article or something.</p>
+      <h2>Più della Repubblica</h2>
+      <p>Pur identificato spesso come stemma della Repubblica Italiana,
+        tecnicamente non si tratta di uno stemma in quanto è privo dello scudo,
+        che ne costituisce una parte essenziale secondo la definizione araldica
+        (al contrario di altre decorazioni quali ad esempio corone, elmi o
+        fronde). Per questo risulta più corretto riferirvisi con il termine di
+        emblema della Repubblica Italiana.</p>
     </div>
     <div class="footer">
-      <h2>footer stuff here</h2>
-      <p>paragraph text. put some filler content here. make this an article or something.</p>
+      <h2>La Stella della Emblema</h2>
+      <p>La stella bianca a cinque punte, detta anche Stellone d'Italia, è
+        stata la tradizionale rappresentazione simbolica dell'Italia sin
+        dall'epoca risorgimentale e rimanda alla tradizionale iconografia che
+        vuole l'Italia, rappresentata come un'avvenente donna, cinta di corona
+        turrita e sovrastata da un astro luminoso (cfr. Iconologia, di Cesare
+        Ripa, sec. XVI); nell'emblema repubblicano essa è sovrapposta a una
+        ruota dentata d'acciaio, simbolo del lavoro su cui si basa la Repubblica
+        (Articolo 1 della Costituzione) e del progresso. L'insieme è racchiuso
+        da un ramo di quercia, che simboleggia la forza e la dignità del popolo
+        italiano, e da uno di olivo, che rappresenta la volontà di pace della
+        nazione.</p>
     </div>
   </section>
 
