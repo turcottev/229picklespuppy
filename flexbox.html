@@ -36,7 +36,7 @@
 
 .flex-container3 {
   padding: 10px;
-  height: 150px;
+  height: 250px;
   border-radius: 1em;
   justify-content: space-between;
 }
@@ -52,8 +52,59 @@
 }
 .flex-container4 {
   padding: 20px;
+  border-radius: 5em;
   flex-direction: column;
   align-items: center;
+}
+.flex-container4 div {
+  border-radius: 5em;
+  padding: 20px;
+}
+.flex-container5 {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      box-sizing: border-box;
+}
+.article {
+      flex: 100%;
+      background: #ccc;
+      padding: 2em;
+      min-height: 500px;
+      box-sizing: border-box;
+    }
+
+.sidebar {
+      flex: 100%;
+      background: #aaa;
+      padding: 2em;
+      min-height: 500px;
+      box-sizing: border-box;
+      margin-top: 1%;
+    }
+
+.footer {
+      flex: 100%;
+      background: #888;
+      padding: 2em;
+      min-height: 200px;
+      box-sizing: border-box;
+      margin-top: 1%;
+      margin-bottom: 2%;
+    }
+
+@media screen and (min-width: 1000px) {
+      .article {
+        flex: 69%;
+        margin-right: 1%;
+      }
+
+      .sidebar {
+        flex: 30%;
+        margin-top: 0;
+      }
 }
   </style>
 </head>
@@ -105,16 +156,16 @@
   </section>
 
   <section class="flex-container5">
-    <div>
+    <div class="article">
       <h2>title of main article</h2>
       <p>paragraph text. put some filler content here. make this an article or something.</p>
       <p>paragraph text. put some filler content here. make this an article or something.</p>
     </div>
-    <div>
+    <div class="sidebar">
       <h2>sidebar here</h2>
       <p>paragraph text. put some filler content here. make this an article or something.</p>
     </div>
-    <div>
+    <div class="footer">
       <h2>footer stuff here</h2>
       <p>paragraph text. put some filler content here. make this an article or something.</p>
     </div>
