@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<title>project1</title>
+<link rel="stylesheet" href="main.css">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+<style>
+img {
+  align: bottom;
+}
+.letter {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.letter {
+  background-color: pink;
+  /* display: flex;*/
+  padding: 20px;
+  color: white;
+  line-height: 1;
+  font-weight: 600;
+  transition: all .3s ease;
+}
+
+/* get elements to span multiple cells in the grid*/
+.header {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.footer {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.navwrap {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.sidebar {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* responsive layout  changes based on screen size*/
+
+@media screen and (min-width: 500px) {
+.wrapper {
+grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media screen and (min-width: 800px) {
+.wrapper {
+grid-template-columns: 1fr 1fr 1fr;
+max-width: 800px;
+}
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.homecat1 {
+  padding-top: 100px;
+}
+.homecat2 {
+  padding-top: 60px;
+}
+}
+@media screen and (min-width: 1200px) {
+.wrapper {
+grid-template-columns: 1fr 1fr 1fr;
+max-width: 1200px;
+}
+p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.homecat1 {
+  padding-top: 130px;
+}
+.homecat2 {
+  padding-top: 90px;
+}
+}
+
+
+</style>
+  </head>
+
+<body>
+<center>
+
+<div class="wrapper">
+  <h2 class="letter header">Beautiful Kitties</h2>
+  <h2 class="letter navwrap"><ul class="navbar">
+  <li class="nav"><a class="active" href="../index.html">Back</a></li>
+  <li class="nav"><a href="p1history.html">Cat History</a></li>
+  <li class="nav"><a href="p1gorgeous.html">Gorgeous Cats</a></li>
+  <li class="nav"><a href="p1exotics.html">Exotics</a></li>
+</ul></h2>
+  <div class="letter sidebar"><h2>Cat History</h2><p>
+    Cats have been a part of history for a long time. From ancient Egypt to the
+    Americas cats are well loved by many people.
+  </p><br />
+  <img class="homecat1" src="cats/egyptiancat.jpg" alt="cat" Width= 100%/>
+</div>
+  <div class="letter"><h2>Gorgeous Cats</h2><p>
+    Some of the most beautiful cats in
+      the world are highlighted in this section including the Bengal, Norwegian
+      Forest Cat, and Maine Coon.
+  </p><br />
+    <img src="cats/smoothie2.png" alt= "cat" width= 100%>
+  </div>
+  <div class="letter"><h2>Exotics</h2><p>
+    Exotic cats may be hard difficult care
+      for but many love them anyway. Exotic cats featured include the African
+      Serval, and the Cheetah.
+  </p><br />
+<img class="homecat2" src="cats/lynx.jpg" alt="cat" width=100% />
+</div>
+  <div class="letter footer">Credits -
+    <a href="https://www.instagram.com/smoothiethecat/?hl=en">Smoothie Cat</a>&hearts;
+    <a href="https://www.instagram.com/neline_the_lioness/?hl=en">Neline Lioness</a>&hearts;
+    <a href="https://www.instagram.com/cobythecat/?hl=en">Coby Cat</a>
+  </div>
+</div>
+
+
+
+
+
+</center>
+</body>
+
+
+</html>

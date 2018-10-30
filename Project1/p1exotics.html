@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<title>gorgeous</title>
+<link rel="stylesheet" href="main.css">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+<style>
+
+.letter {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.letter {
+  background-color: pink;
+  /*display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  line-height: 1;
+  font-weight: 600;
+  transition: all .3s ease;
+}
+
+/* get elements to span multiple cells in the grid*/
+.header {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.footer {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.navwrap {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.sidebar {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+/* responsive layout  changes based on screen size*/
+
+@media screen and (min-width: 500px) {
+.wrapper {
+grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media screen and (min-width: 800px) {
+.wrapper {
+grid-template-columns: 1fr 1fr 1fr;
+max-width: 800px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.wrapper {
+grid-template-columns: 1fr 1fr 1fr;
+max-width: 1200px;
+}
+}
+
+</style>
+  </head>
+
+<body>
+<center>
+
+<div class="wrapper">
+  <h2 class="letter header">Exotic Cats</h2>
+  <h2 class="letter navwrap"><ul class="navbar">
+  <li class="nav"><a class="active" href="project1.html">Home</a></li>
+  <li class="nav"><a href="p1history.html">Cat History</a></li>
+  <li class="nav"><a href="p1gorgeous.html">Gorgeous Cats</a></li>
+  <li class="nav"><a href="#">Exotics</a></li>
+</ul></h2>
+  <div class="letter sidebar"> <h3>Exotics as Pets</h3>
+  <p>One of the most appealing factors about exotic cats is their appearance but
+    what many people don't realize is that exotic cats require special care and
+    respect if someone wishes to keep one. That includes hunting and skill games
+    for their predatory instincts and a large enclosure so they can stretch their
+    legs. Since owning animals like these costs a lot of money most people can't
+    afford them. It's always important to remember that these animals can never
+    truely be pets even if they are tamed. The risks are always present.
+  </p><p>
+African Serval
+</p><p>
+  The Africal serval is a medium sized cat from Africa who is known to act like a dog.
+  The serval loves water and has the ability to jump very high. Like all cats, the
+  serval is a skilled hunter. It has long back legs which make it possible to catch birds nine feet in the air. They
+  are able to dig a couple of feet in the ground to get under a fence. They require
+  a special diet of meat and need a lot of exercise. Many people like the serval
+  but wanted more of a house cat so the savannah cat was created and is much better
+  for family life. Servals can bond with their humans but require patience. (Images 1, 2)
+</p><p>
+  Cheetah
+</p><p>
+  The Cheetah is a surprisingly good choice for an exotic cat. Most know the cheetah
+  as one of the fastest land animals on the planet but dispite what many believe,
+  the cheetah will only chase you if you run away from him due to his predatory instinct.
+  They are actually considered the least dangerous of all the big cats. This does not
+  mean you should let your children near this cat without supervision. This cat is
+  naturally afraid of humans. In the wild they will flee if someone gets too close
+  especially with direct eye contact. In captivity, cheetahs can live double their
+  normal life expectantcy which is about 17 years. They require proper nutrition,
+  plenty of space to run, and a special enclosure. (Images 3, 4)
+</p><p>
+  Caracal
+</p><p>
+  Similar in appearance to the Lynx, the Caracal has a personality similar to the Serval.
+  They originate from parts of Africa and Asia. This cat eats about 2-3lbs of meat
+  every day and can live around 17 years. They are generallyvery playful and friendly
+  to other people and animals. They are intelligent and curious in nature. The carcal
+  as a pet has been around for centuries. Carcals are able to jump high and need
+  a special enclosure. They require walks on leashes and raw meat as their diet. (Images 5, 6)
+
+</p><p>
+  Ocelot
+</p><p>
+  The Ocelot is a medium sized cat from South America. They have spotted coats and
+  large eyes. This cat loves hunting and fishing and is most active at dusk or dawn.
+  The Ocelot likes to spend most of his time hunting and for that reason is not good
+  with other pets or small children. They can be noisy and like to rub their scent
+  on many different objects. Caring for an Ocelot is similar to other exotic cats.
+  They require outdoor space, special foods and play time. They can be affectionate
+  and need a lot of socialization. (Images 7, 8)
+</p></div>
+  <div class="letter"><img class="cat" src="cats/serval.jpg" alt="cat" width=100%/>
+    <br />
+    <img class="cat" src="cats/serval2.png" alt="cat" width=100% />
+    <br />
+    <img class="cat" src="cats/cheetah.jpg" alt="cat" width=100%/>
+    <br />
+      <img class="cat" src="cats/cheetahcubs.jpg" alt="cat" width=100% />
+      <br />
+      <img class="cat" src="cats/caracal3.jpg" alt="cat" width=100% />
+      <br />
+      <img class="cat" src="cats/caracal.jpg" alt="cat" width=100% />
+      <br />
+      <img class="cat" src="cats/ocelot.jpg" alt="cat" width=100% />
+      <br />
+      <img class="cat" src="cats/ocelotcub.jpg" alt="cat" width=100% />
+    </div>
+  <div class="letter footer">Credits - <a href="https://www.thesprucepets.com/serval-cats-1238152">Spruce Pets</a>
+<a href="https://pethelpful.com/exotic-pets/about-pet-cheetahs">PetHelpful</a>
+<a href="https://www.animalwised.com/the-ocelot-as-a-pet-everything-you-need-to-know-2381.html">Animal Wised</a>
+<a href="https://animalfactsblog.com/caracal-pet/">Anifa</a>
+  </div>
+</div>
+
+
+
+
+
+</center>
+</body>
+
+
+</html>

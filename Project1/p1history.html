@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<title>history</title>
+<link rel="stylesheet" href="main.css">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<style>
+
+.letter {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.letter {
+  background-color: pink;
+  /*display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  line-height: 1;
+  font-weight: 600;
+  transition: all .3s ease;
+}
+
+/* get elements to span multiple cells in the grid*/
+.header {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.footer {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.navwrap {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.sidebar {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+/* responsive layout  changes based on screen size*/
+
+@media screen and (min-width: 500px) {
+.wrapper {
+grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media screen and (min-width: 800px) {
+.wrapper {
+grid-template-columns: 1fr 1fr 1fr;
+max-width: 800px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.wrapper {
+grid-template-columns: 1fr 1fr 1fr;
+max-width: 1200px;
+}
+}
+
+@keyframes boxyboi {
+  0% {background-color: white;}
+  25% {background-color: lightgrey;}
+  50% {background-color: darkgrey;}
+  100% {background-color: lightgrey;}
+}
+.box {
+  height: 10px;
+  animation-name: boxyboi;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+</style>
+  </head>
+
+<body>
+<center>
+
+<div class="wrapper">
+  <h2 class="letter header">Cat History</h2>
+  <h2 class="letter navwrap"><ul class="navbar">
+  <li class="nav"><a class="active" href="project1.html">Home</a></li>
+  <li class="nav"><a href="#">Cat History</a></li>
+  <li class="nav"><a href="p1gorgeous.html">Gorgeous Cats</a></li>
+  <li class="nav"><a href="p1exotics.html">Exotics</a></li>
+</ul></h2>
+  <div class="letter sidebar">
+    <h3>Breif History of  Domesticated Cats</h3><p>It is thought that the first cats came from
+    ancient egypt where they were first domesticated as pets. In fact, cats
+    were associated with the  Egyptian goddess Bastet and thus immortalized in
+    different types of art including bronze sculptures and paintings. When their
+    cats had passed away their bodies were mumified and buried with ornate
+    caskets. During life cats would wear expensive gold jewelry with jewels to
+    indicate the status of their owners.</p>
+  <p>
+The earliest domesticated cats were thought to be more than 8,000 years
+ago. A burial site in Cyprus has evidence of humans being buried with their beloved
+pets which is proof that humans lived side by side with cats.
+</p><p>
+  When the Roman Empire expanded to Egypt, cats were introduced to the Romans.
+  The Roman people loved cats so much that they became popular all throughout
+  Europe. From Europe, cats boarded ships with their humans to go to the Americas.
+  One of these cats was reported to be with Christopher Colombus and also aboard
+  the famous Mayflower. In this way, cats were introduced to American life.
+</p><p>
+  Some of the most influencial people to pave the way for modern house cats are
+  World leaders. People like Winston Churchill, The Brittish Prime Minister
+  during World War II, Abraham Lincoln. President Lincoln was an animal lover
+  and brought the first cats into the white house. He also cared for
+  stray cats because of his love for them.
+</p>
+<div class="box"></div>
+</div>
+  <div class="letter"><img class="cat" src="cats/mosaic.jpg" alt="cat" width=100%/>
+    <br />
+    <img class="cat" src="cats/egyptiancat.jpg" alt="cat" width=100%/>
+    <br />
+      <img class="cat" src="cats/romecat.jpg" alt="cat" width=100% />
+      <br />
+      <img class="cat" src="cats/cat1.jpg" alt="cat" width=100% />
+      <br />
+      <img class="cat" src="cats/smoothie3.jpg" alt="cat" width=100% />
+    </div>
+  <div class="letter footer">Credits - <a href="https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/">Smithsonian</a>
+<a href="https://www.alleycat.org/resources/the-natural-history-of-the-cat/">Ally Cat Allies</a>
+  </div>
+</div>
+
+
+
+
+
+</center>
+</body>
+
+
+</html>
