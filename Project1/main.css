@@ -44,15 +44,15 @@ li.nav a {
     text-decoration: none;}
 
 li.nav a:hover:not(.active) {
-    background-color: darkgray;}
+    background-color: pink;}
 
 .active {
-    background-color: darkgray;
+    background-color: pink;
 }
 a:link, a:visited {color: white;
                   text-decoration: none;}
 a:hover {
-  color: gray;
+  color: pink;
 }
 
 .letter {
@@ -72,7 +72,7 @@ a:hover {
 }
 
 .letter {
-  background-color: darkgrey;
+  background-color: rgba(125,125,125,.6);
 /*  display: flex;*/
   justify-content: center;
   align-items: center;
