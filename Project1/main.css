@@ -32,7 +32,7 @@ body {
     margin-bottom: 0px;
     padding: 0;
     overflow: hidden;
-    background-color: gray;}
+    background-color: transparent;}
 li.nav {
     float: left;}
 
@@ -44,10 +44,10 @@ li.nav a {
     text-decoration: none;}
 
 li.nav a:hover:not(.active) {
-    background-color: #D7BCE8;}
+    background-color: gray;}
 
 .active {
-    background-color: #6B6B6B;
+    background-color: gray;
 }
 a:link, a:visited {color: white;
                   text-decoration: none;}
@@ -134,7 +134,7 @@ p {
   font-size: 17pt;
 }
 h2 {
-  font-size: 40pt;
+  font-size: 30pt;
 }
 h3 {
   font-size: 24pt;
