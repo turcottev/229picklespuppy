@@ -44,10 +44,10 @@ li.nav a {
     text-decoration: none;}
 
 li.nav a:hover:not(.active) {
-    background-color: gray;}
+    background-color: darkgray;}
 
 .active {
-    background-color: gray;
+    background-color: darkgray;
 }
 a:link, a:visited {color: white;
                   text-decoration: none;}
@@ -72,7 +72,7 @@ a:hover {
 }
 
 .letter {
-  background-color: pink;
+  background-color: darkgrey;
 /*  display: flex;*/
   justify-content: center;
   align-items: center;
@@ -114,7 +114,7 @@ h2 {
   font-size: 10pt;
 }
 body {
-  font-size: 7pt;
+  font-size: 10pt;
 }
 }
 
