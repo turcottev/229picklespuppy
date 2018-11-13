@@ -1,0 +1,543 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li.nav {
+  float: left;
+}
+
+li.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.nav a:hover:not(.active) {
+  background-color: pink;
+}
+
+div {
+  padding: 20px;
+  /*padding-top:20px;*/
+  margin: 0px;
+  background-color: rgba(125, 125, 125, .3);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  background-color: transparent;
+  padding-top: 0px;
+}
+
+.content {
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.footer {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.navwrap {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.content {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.ani1 {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+}
+
+.ani1:hover {
+  animation-name: ani1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ani1 {
+  0% {
+    border-radius: 0px;
+  }
+
+  12% {
+    border-radius: 15px;
+  }
+
+  25% {
+    border-radius: 30px;
+  }
+
+  37% {
+    border-radius: 50px;
+  }
+
+  50% {
+    border-radius: 75px;
+  }
+
+  62% {
+    border-radius: 50px;
+  }
+
+  75% {
+    border-radius: 30px;
+  }
+
+  87% {
+    border-radius: 15px;
+  }
+
+  100% {
+    border-radius: 0px;
+  }
+}
+
+.ani2 {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+}
+
+.ani2:hover {
+  animation-name: ani2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes ani2 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    left: 50px;
+    top: 100px;
+  }
+
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+
+  75% {
+    left: 100px;
+    top: 50px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.ani3 {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+}
+
+.ani3:hover {
+  animation-name: ani3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ani3 {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+
+  25% {
+    width: 150px;
+    height: 100px;
+  }
+
+  50% {
+    width: 150px;
+    height: 150px;
+  }
+
+  75% {
+    width: 100px;
+    height: 150px;
+  }
+
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.ani4 {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+}
+
+.ani4:hover {
+  animation-name: ani4;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ani4 {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+
+  25% {
+    width: 20px;
+    height: 20px;
+  }
+
+  50% {
+    width: 100px;
+    height: 100px;
+  }
+
+  75% {
+    width: 200px;
+    height: 200px;
+  }
+
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.ani5 {
+  height: 95px;
+  width: 95px;
+  margin: 10px;
+  background-color: transparent;
+  border-style: double;
+}
+
+.ani5:hover {
+  animation-name: ani5;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ani5 {
+  0% {
+    background-color: #FFBAC3;
+  }
+
+  25% {
+    background-color: #C5C1FF;
+  }
+
+  50% {
+    background-color: #2CD8D5;
+  }
+
+  75% {
+    background-color: #C5C1FF;
+  }
+
+  100% {
+    background-color: #FFBAC3;
+  }
+}
+
+.ani6 {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-image: linear-gradient(25deg, #FFBAC3 0%, #C5C1FF 56%, #2CD8D5 100%);
+}
+
+.ani6:hover {
+  animation-name: ani6;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: relative;
+  animation-delay: .5s;
+}
+
+@keyframes ani6 {
+  0% {
+    right: 0px;
+    top: 0px;
+    transform:rotateZ(0deg);
+  }
+
+  25% {
+    right: 200px;
+    top: 500px;
+    transform:rotateZ(70deg);
+  }
+
+  50% {
+    right: 500px;
+    top: 0px;
+    transform:rotateZ(-50deg);
+  }
+
+  75% {
+    right: 200px;
+    top: -300px;
+    transform:rotateZ(120deg);
+  }
+
+  100% {
+    right: 0px;
+    top: 0px;
+    transform:rotateZ(0deg);
+  }
+}
+
+.ani7 {
+  height: 95px;
+  width: 95px;
+  margin: 10px;
+  background-color: transparent;
+  border-style: double;
+}
+
+.ani7:hover {
+  animation-name: ani7;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ani7 {
+  0% {
+    background-color: transparent;
+    border-radius: 0px;
+  }
+
+  25% {
+    background-color: #C5C1FF;
+    border-radius: 50px;
+  }
+
+  50% {
+    background-color: transparent;
+    border-radius: 75px;
+  }
+
+  75% {
+    background-color: #C5C1FF;
+    border-radius: 50px;
+  }
+
+  100% {
+    background-color: transparent;
+    border-radius: 0px;
+  }
+}
+
+.ani8 {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-image: linear-gradient(25deg, #FFBAC3 0%, #C5C1FF 56%, #2CD8D5 100%);
+}
+
+.ani8:hover {
+  animation-name: ani8;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ani8 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(20deg);
+  }
+
+  50% {
+    transform: rotate(120deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.square1 {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-color: transparent;
+  border-style: double;
+  border-color: #C5C1FF;
+  animation-name: square1;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  animation-delay: 2s;
+  position: relative;
+}
+
+@keyframes square1 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  50% {
+    left: 0px;
+    top: 100px;
+  }
+
+  75% {
+    left: 100px;
+    top: 100px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.square2 {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-color: transparent;
+  border-style: double;
+  border-color: #C5C1FF;
+  animation-name: square2;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  animation-delay: 3s;
+  position: relative;
+}
+
+@keyframes square2 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  50% {
+    left: 0px;
+    top: 100px;
+  }
+
+  75% {
+    left: 100px;
+    top: 100px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.square3 {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-color: transparent;
+  border-style: double;
+  border-color: #C5C1FF;
+  animation-name: square3;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  animation-delay: 4s;
+  position: relative;
+}
+
+@keyframes square3 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  50% {
+    left: 0px;
+    top: 100px;
+  }
+
+  75% {
+    left: 100px;
+    top: 100px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.square4 {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-color: transparent;
+  border-style: double;
+  border-color: #C5C1FF;
+  animation-name: square4;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  animation-delay: 5s;
+  position: relative;
+}
+
+@keyframes square4 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  50% {
+    left: 0px;
+    top: 100px;
+  }
+
+  75% {
+    left: 100px;
+    top: 100px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}

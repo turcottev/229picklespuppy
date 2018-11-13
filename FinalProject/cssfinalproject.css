@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+  color: white;
+}
+ul.navbar {
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;}
+li.nav {
+  float: left;}
+
+li.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;}
+
+li.nav a:hover:not(.active) {
+  background-color: pink;}
+
+div {
+  padding: 20px;
+  /*padding-top:20px;*/
+  margin: 0px;
+  background-color: rgba(125,125,125,.3);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  background-color: transparent;
+  padding-top: 0px;
+}
+.content {
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.footer {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.navwrap {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.content {
+  grid-column: span 1;
+  grid-row: span 1;
+}
