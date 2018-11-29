@@ -14,6 +14,14 @@ h1 {
   font-family: Calligraphy;
   font-size: 60pt;
 }
+h2 {
+  font-family: Calligraphy;
+  font-size: 30pt;
+}
+h3 {
+  font-family: Calligraphy;
+  font-size: 25pt;
+}
 ul.navbar {
   list-style-type: none;
   margin-top: 0px;
@@ -39,7 +47,7 @@ li.nav a:hover:not(.active) {
 div {
   padding: 10px;
   margin: 5px;
-  background-color: rgba(50,50,50,.5);
+  background-color: rgba(50,50,50,.6);
   /*border-style:solid;*/
   border-color: rgba(125,125,125);
 }
@@ -55,7 +63,9 @@ a:hover {
 }
 .about {
   background-color: rgba(125,125,125,.8);
-  margin: 5px;
+  margin: 0px;
+  padding: 25px;
+  font-size: 14pt;
 }
 .featured:hover {
   transform: scale(1.1);
@@ -84,6 +94,14 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+.content2 {
+  background-color: rgba(45,45,45,.9);
+  padding: 25px;
+}
+.content1 {
+  background-color: rgba(50,50,50,.7);
+}
+
 .header {
   grid-column: span 3;
   grid-row: span 1;
@@ -116,6 +134,34 @@ a:hover {
   grid-column: span 1;
   grid-row: span 1;
 }
+@media screen and (min-width: 200px) {
+  h1 {
+    font-size: 25pt;
+  }
+  h2 {
+    font-size: 15pt;
+  }
+  h3 {
+    font-size: 12pt;
+  }
+  body, p {
+    font-size: 10pt;
+  }
+}
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 60pt;
+  }
+  h2 {
+    font-size: 30pt;
+  }
+  h3 {
+    font-size: 20pt;
+  }
+  body, p {
+    font-size: 12pt;
+  }
+}
 @media screen and (min-width: 1200px) {
   body {
     max-width: 1500px;
@@ -123,5 +169,22 @@ a:hover {
     margin-right: auto;
     margin-top: 300px;
   }
-
+  h1 {
+    font-size: 60pt;
+  }
+  h2 {
+    font-size: 30pt;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  h3 {
+    font-size: 25pt;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  body, p {
+    font-size: 15pt;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
 }
