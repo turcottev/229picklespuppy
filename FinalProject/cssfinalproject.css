@@ -107,6 +107,7 @@ a:hover {
   grid-row: span 1;
   padding-top: 0px;
   padding-bottom: 0px;
+  padding-left: 20px;
   margin-top: 500px;
 }
 .footer {
@@ -147,6 +148,15 @@ a:hover {
   body, p {
     font-size: 10pt;
   }
+  div {
+    padding: 5px;
+  }
+  .content2 {
+    padding: 10px;
+  }
+  .about {
+    padding: 10px;
+  }
 }
 @media screen and (min-width: 700px) {
   h1 {
@@ -160,6 +170,12 @@ a:hover {
   }
   body, p {
     font-size: 12pt;
+  }
+  .content2 {
+    padding: 30px;
+  }
+  .about {
+    padding: 20px;
   }
 }
 @media screen and (min-width: 1200px) {

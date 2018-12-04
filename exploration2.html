@@ -1,34 +1,45 @@
 <!doctype html>
 <html>
+
 <head>
-<title>my first page</title>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://cdn.rawgit.com/icons8/titanic/master/dist/js/titanic.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.5.9/bodymovin.min.js"></script>
+  <title>Exploration 2</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.rawgit.com/icons8/titanic/master/dist/js/titanic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.5.9/bodymovin.min.js"></script>
 </head>
 
 
 <style>
-@font-face { font-family: vespasian;
-              src: url(Fonts/VESPASIAN_TIMES.ttf); }
-h1 {font-family: vespasian;
-    font-size: 40pt;}
-body {
-  background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
-  Background-size: cover;
-  color: #111;
-  background-attachment: fixed;
-  font-size: 15pt;
+  @font-face {
+    font-family: vespasian;
+    src: url(Fonts/VESPASIAN_TIMES.ttf);
   }
-  .body {padding: 50px;
-      padding-top:20px;
-      padding-bottom: 50px;
-      margin: 100px;
-      border-style: groove;
-      border-width: 5px;
-      background-color: none;}
+
+  h1 {
+    font-family: vespasian;
+    font-size: 40pt;
+  }
+
+  body {
+    background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    Background-size: cover;
+    color: #111;
+    background-attachment: fixed;
+    font-size: 15pt;
+  }
+
+  .body {
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin: 100px;
+    border-style: groove;
+    border-width: 5px;
+    background-color: none;
+  }
+
   ul.navbar {
     list-style-type: none;
     margin: 100px;
@@ -36,216 +47,263 @@ body {
     margin-bottom: 0px;
     padding: 0;
     overflow: hidden;
-    background-color: gray;}
-li.nav {
-    float: left;}
+    background-color: gray;
+  }
 
-li.nav a {
+  li.nav {
+    float: left;
+  }
+
+  li.nav a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;}
+    text-decoration: none;
+  }
 
-li.nav a:hover:not(.active) {
-    background-color: #f18271;}
+  li.nav a:hover:not(.active) {
+    background-color: #f18271;
+  }
 
-.active {
-    background-color: #5a55ae;}
-a:link, a:visited {color: black;
-                  text-decoration: none;}
-a:hover {color: white;}
+  .active {
+    background-color: #5a55ae;
+  }
 
-i:hover {
-  color: pink;
+  a:link,
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  i:hover {
+    color: pink;
     -webkit-animation: pulse 2s ease-in;
     -moz-animation: pulse 2s ease-in;
-     animation: pulse 2s ease-in;
+    animation: pulse 2s ease-in;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-}
+  }
 
 
-@keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-    opacity: 0.0;
- }
- 25% {
-    -webkit-transform: scale(1.35);
-    opacity: 0.1;
- }
- 50% {
-    -webkit-transform: scale(1.7);
-    opacity: 0.3;
- }
- 75% {
-    -webkit-transform: scale(2.05);
-    opacity: 0.5;
- }
- 100% {
-    -webkit-transform: scale(2.4);
-    opacity: 0.0;
- }
-}
+  @keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+      opacity: 0.0;
+    }
 
-#div1 {
-  font-size:48px;
-}
+    25% {
+      -webkit-transform: scale(1.35);
+      opacity: 0.1;
+    }
 
-.flip-box1, .flip-box2 {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
-}
+    50% {
+      -webkit-transform: scale(1.7);
+      opacity: 0.3;
+    }
 
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
+    75% {
+      -webkit-transform: scale(2.05);
+      opacity: 0.5;
+    }
 
-.flip-box1:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
+    100% {
+      -webkit-transform: scale(2.4);
+      opacity: 0.0;
+    }
+  }
 
-.flip-box2:hover .flip-box-inner {
-  transform: rotateX(180deg);
-}
+  #div1 {
+    font-size: 48px;
+  }
 
-.flip-box-front, .flip-box-back1, .flip-box-back2 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
+  .flip-box1,
+  .flip-box2 {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
 
-.flip-box-front {
-  background-color: pink;
-  color: black;
-}
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
 
-.flip-box-back1 {
-  background-color: #5a55ae;
-  color: white;
-  transform: rotateY(180deg);
-}
-.flip-box-back2 {
-  background-color: #5a55ae;
-  color: white;
-  transform: rotateX(180deg);}
+  .flip-box1:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box2:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+
+  .flip-box-front,
+  .flip-box-back1,
+  .flip-box-back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .flip-box-front {
+    background-color: pink;
+    color: black;
+  }
+
+  .flip-box-back1 {
+    background-color: #5a55ae;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-back2 {
+    background-color: #5a55ae;
+    color: white;
+    transform: rotateX(180deg);
+  }
+
+  .icons:hover {
+    color: pink;
+    transform: scale(1.5);
+  }
+
+  .icon2:hover {
+    color: white;
+    transform: rotateZ(50deg);
+  }
+  .icon3:hover {
+    color: #5a55ae;
+    transform: skewX(50deg);
+  }
+  .icon4:hover {
+    color: #f3a469;
+    transform:rotateX(50deg);
+  }
+  .icon5:hover {
+    color: #f7c978;
+    transform:matrix(1, -0.3, 0, 1, 0, 2);
+  }
 </style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
-<center>
+  <center>
 
-  <ul class="navbar">
-  <li class="nav"><a class="active" href="index.html">Home</a></li>
-  <li class="nav"><a href="experiments.html">Experiments</a></li>
-  <li class="nav"><a href="explorations.html">Explorations</a></li>
-  <li class="nav"><a href="projects.html">Projects</a></li>
-</ul>
+    <ul class="navbar">
+      <li class="nav"><a class="active" href="index.html">Home</a></li>
+      <li class="nav"><a href="experiments.html">Experiments</a></li>
+      <li class="nav"><a href="explorations.html">Explorations</a></li>
+      <li class="nav"><a href="projects.html">Projects</a></li>
+    </ul>
 
-<div class="body">
-<h1>
+    <div class="body">
+      <h1>
 <p>Exploration 2</p>
 </h1>
 
-<h3>Explanation</h3>
+      <h3>I learned about different hover effects for Icons and how to animate the
+        battery to look like it's charging.</h3>
 
-  <h2>&hearts; &clubs; &diams; &spades;</h2>
-  <p>
-    &#9813; &#9790; &#9819; &#9788;
-  </p>
-  <p>
-    Hover for Empire Pride
-  </p>
-  <p>
-<i class="fa fa-empire" style="font-size:100px"></i>
-</p>
+      <h2 class="icons">&hearts; &clubs; &diams; &spades;</h2>
+      <h2 class="icon2">&#9813;</h2>
+      <h2 class="icon3">&#9790;</h2>
+      <h2 class="icon4">&#9819;</h2>
+      <h2 class="icon5">&#9788;</h2>
+      </p>
+      <p>
+        Hover for Empire Pride
+      </p>
+      <p>
+        <i class="fa fa-empire" style="font-size:100px"></i>
+      </p>
 
-  <div id="div1" class="fa"></div>
+      <div id="div1" class="fa"></div>
 
-  <script>
-  function chargebattery() {
-    var a;
-    a = document.getElementById("div1");
-    a.innerHTML = "&#xf244;";
-    setTimeout(function () {
-        a.innerHTML = "&#xf243;";
-      }, 1000);
-    setTimeout(function () {
-        a.innerHTML = "&#xf242;";
-      }, 2000);
-    setTimeout(function () {
-        a.innerHTML = "&#xf241;";
-      }, 3000);
-    setTimeout(function () {
-        a.innerHTML = "&#xf240;";
-      }, 4000);
-  }
-  chargebattery();
-  setInterval(chargebattery, 5000);
-  </script>
+      <script>
+        function chargebattery() {
+          var a;
+          a = document.getElementById("div1");
+          a.innerHTML = "&#xf244;";
+          setTimeout(function() {
+            a.innerHTML = "&#xf243;";
+          }, 1000);
+          setTimeout(function() {
+            a.innerHTML = "&#xf242;";
+          }, 2000);
+          setTimeout(function() {
+            a.innerHTML = "&#xf241;";
+          }, 3000);
+          setTimeout(function() {
+            a.innerHTML = "&#xf240;";
+          }, 4000);
+        }
+        chargebattery();
+        setInterval(chargebattery, 5000);
+      </script>
 
-  <h3>Hover over the boxes below:</h3>
+      <h3>Hover over the boxes below:</h3>
 
-  <div class="flip-box1">
-    <div class="flip-box-inner">
-      <div class="flip-box-front">
-        <h2>&#9788;</h2>
+      <div class="flip-box1">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>&#9788;</h2>
+          </div>
+          <div class="flip-box-back1">
+            <h2>&#9790;</h2>
+          </div>
+        </div>
       </div>
-      <div class="flip-box-back1">
-        <h2>&#9790;</h2>
-      </div>
-    </div>
-  </div>
 
-  <div class="flip-box2">
-    <div class="flip-box-inner">
-      <div class="flip-box-front">
-        <h2>&#9788;</h2>
+      <div class="flip-box2">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>&#9788;</h2>
+          </div>
+          <div class="flip-box-back2">
+            <h2>&#9790;</h2>
+          </div>
+        </div>
       </div>
-      <div class="flip-box-back2">
-        <h2>&#9790;</h2>
-      </div>
-    </div>
-  </div>
 
-<p>
-  <div class='titanic titanic-checkbox'></div>
-  <script>
-        var titanic = new Titanic({
-          hover: true, // auto animated on hover (default true)
-          click: true  // auto animated on click/tap (default false)
-        });
-    </script>
-    <button onclick="titanic.on(getElementById('checkbox').value)">Animation On</button>
-</p>
+      <p>
+        <div class='titanic titanic-checkbox'></div>
+        <script>
+          var titanic = new Titanic({
+            hover: true, // auto animated on hover (default true)
+            click: true // auto animated on click/tap (default false)
+          });
+        </script>
+        <button onclick="titanic.on(getElementById('checkbox').value)">Animation On</button>
+      </p>
 
-<h2>
+      <h2>
 Inspiration and Sources
 </h2>
-  <p>
-      <a href="https://stackoverflow.com/questions/41279034/pulsating-effect-on-icon-in-html5-with-css/41279137">Stack Overflow</a>
-  </p>
-  <p>
-      <a href="https://www.w3schools.com/howto/howto_js_animate_icons.asp">W3Schools</a>
-  </p>
-  <p>
-      <a href="https://github.com/icons8/titanic">Github Icons</a>
-  </p>
+      <p>
+        <a href="https://stackoverflow.com/questions/41279034/pulsating-effect-on-icon-in-html5-with-css/41279137">Stack Overflow</a>
+      </p>
+      <p>
+        <a href="https://www.w3schools.com/howto/howto_js_animate_icons.asp">W3Schools</a>
+      </p>
+      <p>
+        <a href="https://github.com/icons8/titanic">Github Icons</a>
+      </p>
 
-</div>
-</center>
+    </div>
+  </center>
 </body>
 
 
